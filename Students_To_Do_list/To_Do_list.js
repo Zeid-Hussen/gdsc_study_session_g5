@@ -2,6 +2,10 @@ document.querySelector(".add").addEventListener("click", function(){
   document.querySelector(".popup").classList.add("active");
 });
 
+document.querySelector(".add-img").addEventListener("click", function(){
+  document.querySelector(".popup").classList.add("active");
+});
+
 document.querySelector(".but-cancel").addEventListener("click", function(){
   document.querySelector(".popup").classList.remove("active");
 });
@@ -16,8 +20,7 @@ document.querySelector(".but-add").addEventListener("click", function(){
     }
     else {
       let list = document.createElement("li");
-      // let close = document.createElement("div")
-      // close.classList.add("close");
+    
       let closeIcon = document.createElement("span")
       closeIcon.innerHTML = "\u2715";
       closeIcon.classList.add("closeIcon");
@@ -29,7 +32,6 @@ document.querySelector(".but-add").addEventListener("click", function(){
       let secondInput = document.createElement("div");
       secondInput.textContent = input2.value;
       secondInput.classList.add("secondInput");
-      // close.appendChild(closeIcon);
       outerDiv.appendChild(firstInput);
       outerDiv.appendChild(secondInput);
       list.appendChild(outerDiv);
@@ -49,4 +51,4 @@ ul.addEventListener("click", function(e) {
     else if(e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
     }
-}, false);
+});

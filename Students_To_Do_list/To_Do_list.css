@@ -95,12 +95,23 @@
   align-self: center;
   width: 100%;
 }
+.firstInput {
+  max-width: 600px;
+  min-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .input-1 {
   font-size: large;
   font-weight: 500;
   border: none;
   outline: 0;
-  width: 75%;
+  
+  max-width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding-bottom: 8px;
   padding-top: 10px;
   padding-left: 5px;
@@ -114,7 +125,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   outline: 0;
-  width: 75%;
+  max-width: 200px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 50px;
@@ -257,6 +268,7 @@ ul li {
   margin: 0px 0px;
   position: relative;
   display: flex;
+  flex: 1;
   flex-direction: row;
   border-bottom: 0.05px;
   border-color: rgba(46, 46, 46, 0.646);
@@ -265,6 +277,8 @@ ul li {
   border-right: 0px;
   border-style: solid;
   justify-content: space-between;
+  max-width: 600px;
+  min-width: 200px;
 }
 
 ul li::before {
