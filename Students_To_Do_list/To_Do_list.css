@@ -56,6 +56,7 @@
   margin-right: 10px;
   display: flex;
   margin-top: 3px;
+  z-index: 1;
 }
 .popup {
   
@@ -103,7 +104,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* .input-2 {
+.input-2 {
   border: none;
   padding-top: 5px;
   margin-top: 5px;
@@ -115,7 +116,7 @@
   padding-right: 50px;
   font-size: small;
   margin-bottom: 5px;
-} */
+}
 .buttons {
   display: flex;
   flex-direction: row;
@@ -251,6 +252,15 @@ ul li {
   cursor: pointer;
   margin: 0px 0px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.05px;
+  border-color: rgba(46, 46, 46, 0.646);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  justify-content: space-between;
 }
 
 ul li::before {
@@ -280,4 +290,22 @@ ul li.li::before {
   background-position: center;
   top: 12px;
   left: 8px;
+}
+.secondInput {
+  font-size: small;
+  font-weight: light;
+}
+.close {
+  display: flex;
+}
+.outerDiv {
+display: flex;
+flex-direction: column;
+}
+.firstInput {
+  display: flex;
+}
+.secondInput {
+  margin-top: 5px;
+  display: flex;
 }
