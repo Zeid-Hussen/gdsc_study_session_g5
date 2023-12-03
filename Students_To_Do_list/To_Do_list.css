@@ -30,9 +30,11 @@
   display: flex;
   color: rgb(63, 63, 63);
   font-size: large;
+  position: relative;
   display: flex;
   margin: 0px 0px;
   font-size: large;
+  z-index: 1;
 }
 .add:hover {
   color: red;
@@ -56,11 +58,15 @@
   margin-top: 3px;
 }
 .popup {
+  
   border: transparent;
   background-color: white;
   padding: 10px;
   opacity: 0;
   margin-top: 20px;
+  position: absolute;
+  top: 400px;
+  right: 345px;
   margin-bottom: 30px;
   padding-right: 50px;
   padding-top: 20px;
@@ -69,11 +75,13 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   width: 550px;
   height: 210px;
+  z-index: 0;
   /* transition: opacity 0.3s ease; */
 }
 
 .popup.active {
   opacity: 1;
+  z-index: 2;
 }
 .popup-1 {
   display: flex;
@@ -228,4 +236,47 @@
 }
 .but-add:hover {
   cursor: pointer;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  margin: 0px 0px;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 25%;
+  background-image: url(unchecked\ list\ Icon.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.li {
+  text-decoration: line-through;
+}
+ul li.li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 25%;
+  background-image: url(checked_list.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
 }
