@@ -65,12 +65,12 @@
   opacity: 0;
   margin-top: 20px;
   position: absolute;
-  top: 400px;
-  right: 345px;
+  top: 350px;
+  right: 450px;
   margin-bottom: 30px;
   padding-right: 50px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   width: 550px;
@@ -103,7 +103,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.input-2 {
+/* .input-2 {
   border: none;
   padding-top: 5px;
   margin-top: 5px;
@@ -115,7 +115,7 @@
   padding-right: 50px;
   font-size: small;
   margin-bottom: 5px;
-}
+} */
 .buttons {
   display: flex;
   flex-direction: row;
@@ -183,6 +183,7 @@
 .bottom-div {
   display: flex;
   flex-direction: row;
+    justify-content: center;
   justify-content: flex-end;
   margin-top: 10px;
   padding-top: 10px;
@@ -255,10 +256,10 @@ ul li {
 ul li::before {
   content: "";
   position: absolute;
-  height: 28px;
-  width: 28px;
+  height: 23px;
+  width: 23px;
   border-radius: 25%;
-  background-image: url(unchecked\ list\ Icon.jpg);
+  background-image: url(unchecked\ list\ Icon.png);
   background-size: cover;
   background-position: center;
   top: 12px;
@@ -271,8 +272,8 @@ ul li.li {
 ul li.li::before {
   content: "";
   position: absolute;
-  height: 28px;
-  width: 28px;
+  height: 23px;
+  width: 23px;
   border-radius: 25%;
   background-image: url(checked_list.png);
   background-size: cover;
