@@ -16,8 +16,8 @@ document.querySelector(".but-add").addEventListener("click", function(){
     }
     else {
       let list = document.createElement("li");
-      let close = document.createElement("div")
-      close.classList.add("close");
+      // let close = document.createElement("div")
+      // close.classList.add("close");
       let closeIcon = document.createElement("span")
       closeIcon.innerHTML = "\u2715";
       closeIcon.classList.add("closeIcon");
@@ -29,15 +29,24 @@ document.querySelector(".but-add").addEventListener("click", function(){
       let secondInput = document.createElement("div");
       secondInput.textContent = input2.value;
       secondInput.classList.add("secondInput");
-      close.appendChild(closeIcon);
+      // close.appendChild(closeIcon);
       outerDiv.appendChild(firstInput);
       outerDiv.appendChild(secondInput);
       list.appendChild(outerDiv);
-      list.appendChild(close);
+      list.appendChild(closeIcon);
       ul.appendChild(list) ;
 
     }
   input1.value = "";
   input2.value = "";
-  document.querySelector(".popup").classList.remove("active");
-})
+  document.querySelector(".popup").classList.remove("active")
+});
+
+ul.addEventListener("click", function(e) {
+  if(e.target.tagName === "LI"){
+    e.target.classList.toggle("li")
+  }
+    else if(e.target.tagName === "SPAN") {
+      e.target.parentElement.remove();
+    }
+}, false);
