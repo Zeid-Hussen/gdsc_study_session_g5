@@ -1,10 +1,18 @@
 .general {
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  position: absolute;
+  font-family: 'Roboto';
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #2E3192, #1BFFFF);
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
-.to-do-list {
-  
-  right: 100;
+.header {
+  font-size: 75px;
+  margin: 15px 0px;
 }
 .img:hover {
     color: red;
@@ -13,18 +21,20 @@
 .add-new {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items:flex-start;
 }
 .add {
   display: flex;
   color: rgb(63, 63, 63);
   font-size: large;
   display: flex;
+  margin: 0px 0px;
 }
 .add:hover {
   color: red;
   cursor: pointer;
 }
+
 .paragraph {
   display: flex;
 }
@@ -36,18 +46,27 @@
   height: 15px;
   object-fit:fill;
   border: none;
-  margin-right: 15px;
+  border-radius: 30%;
+  margin-right: 10px;
   display: flex;
+  margin-top: 3px;
+}
+.popup:active {
+  opacity: 1;
 }
 .popup{
  border: transparent;
+ background-color: white;
  padding: 10px;
+ opacity: 0;
+ 
  padding-right: 50px;
  padding-top: 20px;
  padding-bottom: 20px;
  border-radius: 8px;
  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15) ;
  width: 550px;
+ height: 210px;
 }
 .popup-1 {
   display: flex;
@@ -166,6 +185,7 @@
   padding-right: 13px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: medium;
   margin-right: 8px;
   background-color:rgba(0, 0, 0, 0.018);
   border-width: 0.05px;
@@ -173,16 +193,20 @@
   border-color: rgba(105, 105, 105, 0.169);
   color: rgb(0 0 0);
   margin-left: 5px;
+  transition: 0.15s;
 
+}
+.but-cancel:active {
+  background-color: rgba(119, 119, 119, 0.173);
 }
 .but-cancel:hover {
   cursor: pointer;
-  background-color: rgba(119, 119, 119, 0.173);
 }
 .but-add {
   padding-top: 10px;
   padding-right: 13px;
   padding-left: 13px;
+  font-size: medium;
   padding-bottom: 10px;
   background-color:rgba(225, 5, 5, 0.785);
   border-width: 0.05px;
@@ -190,4 +214,11 @@
   border-color: rgba(105, 105, 105, 0.169);
   color: white;
   margin-left: 5px;
+  transition: 0.15s;
+}
+.but-add:active {
+  background-color:rgba(163, 0, 0, 0.785);
+}
+.but-add:hover {
+  cursor: pointer;
 }
