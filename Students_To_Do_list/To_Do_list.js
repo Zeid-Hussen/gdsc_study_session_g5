@@ -1,3 +1,7 @@
+const ul = document.querySelector(".ul");
+const input1 = document.querySelector(".input-1");
+const input2 = document.querySelector(".input-2")
+
 document.querySelector(".add").addEventListener("click", function(){
   document.querySelector(".popup").classList.add("active");
 });
@@ -6,13 +10,13 @@ document.querySelector(".add-img").addEventListener("click", function(){
   document.querySelector(".popup").classList.add("active");
 });
 
-document.querySelector(".but-cancel").addEventListener("click", function(){
+document.querySelector(".but-cancel").addEventListener("click", function(){             document.querySelector(".popup")
   document.querySelector(".popup").classList.remove("active");
+  input1.value="";
+  input2.value= "";
 });
 
-const ul = document.querySelector(".ul");
-const input1 = document.querySelector(".input-1");
-const input2 = document.querySelector(".input-2")
+
 
 document.querySelector(".but-add").addEventListener("click", function(){
     if (input1.value === '' || input2.value === '') {
@@ -44,7 +48,8 @@ document.querySelector(".but-add").addEventListener("click", function(){
   document.querySelector(".popup").classList.remove("active")
 });
 
-ul.addEventListener("click", function(e) {
+ul.addEventListener("click", (e) => {
+  console.log(e)
   if(e.target.tagName === "LI"){
     e.target.classList.toggle("li")
   }
@@ -52,3 +57,4 @@ ul.addEventListener("click", function(e) {
       e.target.parentElement.remove();
     }
 });
+

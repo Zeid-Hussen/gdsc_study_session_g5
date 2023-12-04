@@ -1,18 +1,29 @@
+html{
+  height: fit-content;
+}
+
+
 .general {
   font-family: 'Roboto';
   margin: 0;
-  height: 100vh;
-  background: linear-gradient(45deg, #2E3192, #1BFFFF);
+  min-width: 1100px;
+  min-height: 100vh;
+  background: linear-gradient( 45deg, #2F755D,#3E64AC, #47726F);
   display: flex;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.to-do-list {
+  padding-top: 20px;
 
 }
 .header {
   font-size: 75px;
-  margin-top: -25px;
+  margin-top: 20px;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -75,11 +86,11 @@
   margin-bottom: 30px;
   padding-right: 50px;
   padding-top: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   width: 550px;
-  height: 210px;
+  /* height: 210px; */
   z-index: 0;
   /* transition: opacity 0.3s ease; */
 }
@@ -96,35 +107,53 @@
   width: 100%;
 }
 .firstInput {
-  max-width: 600px;
+  max-width: 450px;
   min-width: 200px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.input-1 {
-  font-size: large;
-  font-weight: 500;
-  border: none;
-  outline: 0;
-  
-  max-width: 500px;
+.secondInput {
+  max-width: 450px;
+  min-width: 200px;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
-  padding-bottom: 8px;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 50px;
+}
+.overflow {
+  /* max-width: 500px; */
+  white-space: wrap;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+}
+.input-1 {
+  font-size: large;
+  font-weight: 450px;
+  border: none;
+  outline: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  white-space: wrap;
+  word-wrap: normal;
+  overflow: visible;
+  /* overflow: scroll; */
+  /* white-space: wrap; */
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  padding: 10px 50px 5px 5px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
 .input-2 {
   border: none;
   padding-top: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
   outline: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
   max-width: 200px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -294,10 +323,10 @@ ul li::before {
   left: 8px;
 }
 
-ul li.li {
+ul .li {
   text-decoration: line-through;
 }
-ul li.li::before {
+ul .li::before {
   content: "";
   position: absolute;
   height: 19px;
@@ -310,10 +339,7 @@ ul li.li::before {
   left: 8px;
 
 }
-.secondInput {
-  font-size: small;
-  font-weight: light;
-}
+
 .closeIcon {
   display: flex;
   padding-left: 3px;
@@ -321,10 +347,13 @@ ul li.li::before {
   padding-top: -1px;
   padding-right: -1px;
   height: 20px;
+  margin-left: 10px;
+  font-weight: bolder;
   width: 20px;
 }
 .closeIcon:hover {
   background: rgba(200, 200, 200, 0.703);
+  
 }
 .outerDiv {
 display: flex;
@@ -334,6 +363,8 @@ flex-direction: column;
   display: flex;
   font-size: larger;
   padding-top: 0px;
+  width: 520px;
+  
   margin-top: 0px;
 }
 .secondInput {
