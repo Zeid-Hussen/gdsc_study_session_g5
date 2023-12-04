@@ -1,0 +1,99 @@
+html {
+  width: 100vw;
+  height: 100vw;
+  background: linear-gradient(to right top, #3e7a99, #0087a0, #00929b, #009d8b, #00a572, #11ac70, #20b46d, #2ebb6a, #1ec588, #18cfa4, #29d8bf, #44e1d6);
+}
+body {
+width: 100vw;
+height: 100%;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+img {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  padding-bottom: 7.25%;
+  padding-top: 7.25%;
+  padding-left: 37.5%;
+}
+
+
+.main-conatiner {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* border: 1px solid;
+  border-color: black; */
+  color: white;
+  max-width: 500px;
+  min-width: 500px;
+  max-height: 600px;
+  min-height: auto;
+  text-align: center;
+  vertical-align: baseline;
+  height: 3rem;
+  line-height: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.display {
+  grid-column: span 3;
+  background-color: rgba(97, 43, 43, 0.35);
+ text-align: right;
+ text-align: end;
+ color: black;
+ white-space: normal;
+ font-size: large;
+ font-weight: bold;
+ padding-right: 5px;
+}
+.delete {
+  background-color: rgba(187, 44, 44, 0.75);
+  color: white;
+  align-items: center;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+.delete:hover {
+  background-color: rgb(97, 43, 43);
+}
+.delete:active {
+  background-color: rgb(142, 61, 61);
+}
+.oprators {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  box-shadow: 0 0 2px rgba(36, 31, 31, 0.206) inset;
+  cursor: pointer;
+  transition: 0.05s;
+}
+.oprators:hover {
+  background-color: rgb(96, 96, 96);
+
+}
+.oprators:active {
+  background-color: rgb(255, 255, 255);
+}
+
+.numbers, .equals{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  transition: 0.05s;
+  width: 100%; 
+  height: 100%;
+  
+}
+.numbers:hover, .equals:hover{
+  background-color: rgb(36, 31, 31);
+}
+.numbers:active, .equals:active {
+  background-color: black;
+}
