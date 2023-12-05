@@ -1,6 +1,6 @@
 html {
   width: 100vw;
-  height: 100vw;
+  height: 100%;
   background: linear-gradient(to right top, #3e7a99, #0087a0, #00929b, #009d8b, #00a572, #11ac70, #20b46d, #2ebb6a, #1ec588, #18cfa4, #29d8bf, #44e1d6);
 }
 body {
@@ -20,6 +20,9 @@ img {
   padding-left: 37.5%;
 }
 
+.result {
+  width: 100px;
+}
 
 .main-conatiner {
   display: grid; 
@@ -38,17 +41,19 @@ img {
   line-height: 3rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .display {
   grid-column: span 3;
   background-color: rgba(97, 43, 43, 0.35);
  text-align: right;
  text-align: end;
  color: black;
- white-space: normal;
  font-size: large;
  font-weight: bold;
  padding-right: 5px;
 }
+
+
 .delete {
   background-color: rgba(187, 44, 44, 0.75);
   color: white;
